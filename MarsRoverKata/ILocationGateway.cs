@@ -5,9 +5,8 @@ using MarsRoverKata.UseCases;
 
 namespace MarsRoverKata
 {
-    public interface ILocationGateway
+    public interface ILocationGateway: ILocationWriter, ILocationReader
     {
-        void Save(Location location);
-        List<Location> Retrieve();
+
     }
 }

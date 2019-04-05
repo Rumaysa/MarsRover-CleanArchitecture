@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using MarsRoverKata;
 using MarsRoverKata.Domain;
@@ -18,5 +19,9 @@ namespace MarsRover.Tests.AcceptanceTests
         {
             return _locationGateway.Retrieve().First();
         }
+    }
+    public interface ILocationReader
+    {
+        List<Location> Retrieve();
     }
 }

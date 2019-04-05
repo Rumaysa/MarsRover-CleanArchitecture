@@ -1,10 +1,11 @@
 using System;
+using System.Collections.Generic;
 
 namespace MarsRoverKata.Domain
 {
     public class Location
     {
-        public Array Coordinates { get; set; }
+        public List<int> Coordinates { get; set; }
         public string Direction { get; set; }
     }
 }
